@@ -1,0 +1,26 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/user/Desktop/op_sys/project/computedistance.h
+
+/home/user/Desktop/op_sys/project/directoryscan.c
+stdio.h
+-
+stdlib.h
+-
+dirent.h
+-
+string.h
+-
+filereader.h
+/home/user/Desktop/op_sys/project/filereader.h
+computedistance.h
+/home/user/Desktop/op_sys/project/computedistance.h
+
+/home/user/Desktop/op_sys/project/filereader.h
+
