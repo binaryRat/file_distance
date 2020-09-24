@@ -1,9 +1,9 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/filedistance.dir/changefile.c.o"
-  "CMakeFiles/filedistance.dir/computedistance.c.o"
-  "CMakeFiles/filedistance.dir/directoryscan.c.o"
-  "CMakeFiles/filedistance.dir/filereader.c.o"
+  "CMakeFiles/filedistance.dir/dirscan.c.o"
+  "CMakeFiles/filedistance.dir/fapply.c.o"
+  "CMakeFiles/filedistance.dir/fdistance.c.o"
   "CMakeFiles/filedistance.dir/main.c.o"
+  "CMakeFiles/filedistance.dir/utils.c.o"
   "filedistance"
   "filedistance.pdb"
 )

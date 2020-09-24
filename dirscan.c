@@ -3,8 +3,8 @@
 #include <dirent.h>
 #include <string.h>
 
-#include "filereader.h"
-#include "computedistance.h"
+#include "utils.h"
+#include "fdistance.h"
 
 int minimum_distance = -1;
 char minimum_distance_dir[4096]; //4096 maximum path lenght

@@ -3,9 +3,9 @@
 #include <string.h>
 #include <time.h>
 
-#include "computedistance.h"
-#include "changefile.h"
-#include "directoryscan.h"
+#include "fdistance.h"
+#include "fapply.h"
+#include "dirscan.h"
 
 void printhelp(char*);
 

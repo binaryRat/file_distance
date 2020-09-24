@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/user/Desktop/op_sys/project
+CMAKE_SOURCE_DIR = /home/user/Desktop/file_distance
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/user/Desktop/op_sys/project
+CMAKE_BINARY_DIR = /home/user/Desktop/file_distance
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/Desktop/op_sys/project/CMakeFiles /home/user/Desktop/op_sys/project/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/Desktop/file_distance/CMakeFiles /home/user/Desktop/file_distance/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/Desktop/op_sys/project/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/Desktop/file_distance/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -123,113 +123,86 @@ filedistance/fast:
 	$(MAKE) -f CMakeFiles/filedistance.dir/build.make CMakeFiles/filedistance.dir/build
 .PHONY : filedistance/fast
 
-changefile.o: changefile.c.o
+dirscan.o: dirscan.c.o
 
-.PHONY : changefile.o
-
-# target to build an object file
-changefile.c.o:
-	$(MAKE) -f CMakeFiles/filedistance.dir/build.make CMakeFiles/filedistance.dir/changefile.c.o
-.PHONY : changefile.c.o
-
-changefile.i: changefile.c.i
-
-.PHONY : changefile.i
-
-# target to preprocess a source file
-changefile.c.i:
-	$(MAKE) -f CMakeFiles/filedistance.dir/build.make CMakeFiles/filedistance.dir/changefile.c.i
-.PHONY : changefile.c.i
-
-changefile.s: changefile.c.s
-
-.PHONY : changefile.s
-
-# target to generate assembly for a file
-changefile.c.s:
-	$(MAKE) -f CMakeFiles/filedistance.dir/build.make CMakeFiles/filedistance.dir/changefile.c.s
-.PHONY : changefile.c.s
-
-computedistance.o: computedistance.c.o
-
-.PHONY : computedistance.o
+.PHONY : dirscan.o
 
 # target to build an object file
-computedistance.c.o:
-	$(MAKE) -f CMakeFiles/filedistance.dir/build.make CMakeFiles/filedistance.dir/computedistance.c.o
-.PHONY : computedistance.c.o
+dirscan.c.o:
+	$(MAKE) -f CMakeFiles/filedistance.dir/build.make CMakeFiles/filedistance.dir/dirscan.c.o
+.PHONY : dirscan.c.o
 
-computedistance.i: computedistance.c.i
+dirscan.i: dirscan.c.i
 
-.PHONY : computedistance.i
+.PHONY : dirscan.i
 
 # target to preprocess a source file
-computedistance.c.i:
-	$(MAKE) -f CMakeFiles/filedistance.dir/build.make CMakeFiles/filedistance.dir/computedistance.c.i
-.PHONY : computedistance.c.i
+dirscan.c.i:
+	$(MAKE) -f CMakeFiles/filedistance.dir/build.make CMakeFiles/filedistance.dir/dirscan.c.i
+.PHONY : dirscan.c.i
 
-computedistance.s: computedistance.c.s
+dirscan.s: dirscan.c.s
 
-.PHONY : computedistance.s
+.PHONY : dirscan.s
 
 # target to generate assembly for a file
-computedistance.c.s:
-	$(MAKE) -f CMakeFiles/filedistance.dir/build.make CMakeFiles/filedistance.dir/computedistance.c.s
-.PHONY : computedistance.c.s
+dirscan.c.s:
+	$(MAKE) -f CMakeFiles/filedistance.dir/build.make CMakeFiles/filedistance.dir/dirscan.c.s
+.PHONY : dirscan.c.s
 
-directoryscan.o: directoryscan.c.o
+fapply.o: fapply.c.o
 
-.PHONY : directoryscan.o
+.PHONY : fapply.o
 
 # target to build an object file
-directoryscan.c.o:
-	$(MAKE) -f CMakeFiles/filedistance.dir/build.make CMakeFiles/filedistance.dir/directoryscan.c.o
-.PHONY : directoryscan.c.o
+fapply.c.o:
+	$(MAKE) -f CMakeFiles/filedistance.dir/build.make CMakeFiles/filedistance.dir/fapply.c.o
+.PHONY : fapply.c.o
 
-directoryscan.i: directoryscan.c.i
+fapply.i: fapply.c.i
 
-.PHONY : directoryscan.i
+.PHONY : fapply.i
 
 # target to preprocess a source file
-directoryscan.c.i:
-	$(MAKE) -f CMakeFiles/filedistance.dir/build.make CMakeFiles/filedistance.dir/directoryscan.c.i
-.PHONY : directoryscan.c.i
+fapply.c.i:
+	$(MAKE) -f CMakeFiles/filedistance.dir/build.make CMakeFiles/filedistance.dir/fapply.c.i
+.PHONY : fapply.c.i
 
-directoryscan.s: directoryscan.c.s
+fapply.s: fapply.c.s
 
-.PHONY : directoryscan.s
+.PHONY : fapply.s
 
 # target to generate assembly for a file
-directoryscan.c.s:
-	$(MAKE) -f CMakeFiles/filedistance.dir/build.make CMakeFiles/filedistance.dir/directoryscan.c.s
-.PHONY : directoryscan.c.s
+fapply.c.s:
+	$(MAKE) -f CMakeFiles/filedistance.dir/build.make CMakeFiles/filedistance.dir/fapply.c.s
+.PHONY : fapply.c.s
 
-filereader.o: filereader.c.o
+fdistance.o: fdistance.c.o
 
-.PHONY : filereader.o
+.PHONY : fdistance.o
 
 # target to build an object file
-filereader.c.o:
-	$(MAKE) -f CMakeFiles/filedistance.dir/build.make CMakeFiles/filedistance.dir/filereader.c.o
-.PHONY : filereader.c.o
+fdistance.c.o:
+	$(MAKE) -f CMakeFiles/filedistance.dir/build.make CMakeFiles/filedistance.dir/fdistance.c.o
+.PHONY : fdistance.c.o
 
-filereader.i: filereader.c.i
+fdistance.i: fdistance.c.i
 
-.PHONY : filereader.i
+.PHONY : fdistance.i
 
 # target to preprocess a source file
-filereader.c.i:
-	$(MAKE) -f CMakeFiles/filedistance.dir/build.make CMakeFiles/filedistance.dir/filereader.c.i
-.PHONY : filereader.c.i
+fdistance.c.i:
+	$(MAKE) -f CMakeFiles/filedistance.dir/build.make CMakeFiles/filedistance.dir/fdistance.c.i
+.PHONY : fdistance.c.i
 
-filereader.s: filereader.c.s
+fdistance.s: fdistance.c.s
 
-.PHONY : filereader.s
+.PHONY : fdistance.s
 
 # target to generate assembly for a file
-filereader.c.s:
-	$(MAKE) -f CMakeFiles/filedistance.dir/build.make CMakeFiles/filedistance.dir/filereader.c.s
-.PHONY : filereader.c.s
+fdistance.c.s:
+	$(MAKE) -f CMakeFiles/filedistance.dir/build.make CMakeFiles/filedistance.dir/fdistance.c.s
+.PHONY : fdistance.c.s
 
 main.o: main.c.o
 
@@ -258,6 +231,33 @@ main.c.s:
 	$(MAKE) -f CMakeFiles/filedistance.dir/build.make CMakeFiles/filedistance.dir/main.c.s
 .PHONY : main.c.s
 
+utils.o: utils.c.o
+
+.PHONY : utils.o
+
+# target to build an object file
+utils.c.o:
+	$(MAKE) -f CMakeFiles/filedistance.dir/build.make CMakeFiles/filedistance.dir/utils.c.o
+.PHONY : utils.c.o
+
+utils.i: utils.c.i
+
+.PHONY : utils.i
+
+# target to preprocess a source file
+utils.c.i:
+	$(MAKE) -f CMakeFiles/filedistance.dir/build.make CMakeFiles/filedistance.dir/utils.c.i
+.PHONY : utils.c.i
+
+utils.s: utils.c.s
+
+.PHONY : utils.s
+
+# target to generate assembly for a file
+utils.c.s:
+	$(MAKE) -f CMakeFiles/filedistance.dir/build.make CMakeFiles/filedistance.dir/utils.c.s
+.PHONY : utils.c.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -267,21 +267,21 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... filedistance"
-	@echo "... changefile.o"
-	@echo "... changefile.i"
-	@echo "... changefile.s"
-	@echo "... computedistance.o"
-	@echo "... computedistance.i"
-	@echo "... computedistance.s"
-	@echo "... directoryscan.o"
-	@echo "... directoryscan.i"
-	@echo "... directoryscan.s"
-	@echo "... filereader.o"
-	@echo "... filereader.i"
-	@echo "... filereader.s"
+	@echo "... dirscan.o"
+	@echo "... dirscan.i"
+	@echo "... dirscan.s"
+	@echo "... fapply.o"
+	@echo "... fapply.i"
+	@echo "... fapply.s"
+	@echo "... fdistance.o"
+	@echo "... fdistance.i"
+	@echo "... fdistance.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... utils.o"
+	@echo "... utils.i"
+	@echo "... utils.s"
 .PHONY : help
 
 

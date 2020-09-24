@@ -2,8 +2,8 @@
 #include <string.h>
 #include <stdlib.h>
 
-#include "filereader.h"
-#include "computedistance.h"
+#include "utils.h"
+#include "fdistance.h"
 
 static int minimum(int,int,int);
 

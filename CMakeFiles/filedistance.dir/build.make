@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/user/Desktop/op_sys/project
+CMAKE_SOURCE_DIR = /home/user/Desktop/file_distance
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/user/Desktop/op_sys/project
+CMAKE_BINARY_DIR = /home/user/Desktop/file_distance
 
 # Include any dependencies generated for this target.
 include CMakeFiles/filedistance.dir/depend.make
@@ -59,88 +59,88 @@ include CMakeFiles/filedistance.dir/flags.make
 
 CMakeFiles/filedistance.dir/main.c.o: CMakeFiles/filedistance.dir/flags.make
 CMakeFiles/filedistance.dir/main.c.o: main.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/Desktop/op_sys/project/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/filedistance.dir/main.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/filedistance.dir/main.c.o   -c /home/user/Desktop/op_sys/project/main.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/Desktop/file_distance/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/filedistance.dir/main.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/filedistance.dir/main.c.o   -c /home/user/Desktop/file_distance/main.c
 
 CMakeFiles/filedistance.dir/main.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/filedistance.dir/main.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/user/Desktop/op_sys/project/main.c > CMakeFiles/filedistance.dir/main.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/user/Desktop/file_distance/main.c > CMakeFiles/filedistance.dir/main.c.i
 
 CMakeFiles/filedistance.dir/main.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/filedistance.dir/main.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/user/Desktop/op_sys/project/main.c -o CMakeFiles/filedistance.dir/main.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/user/Desktop/file_distance/main.c -o CMakeFiles/filedistance.dir/main.c.s
 
-CMakeFiles/filedistance.dir/computedistance.c.o: CMakeFiles/filedistance.dir/flags.make
-CMakeFiles/filedistance.dir/computedistance.c.o: computedistance.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/Desktop/op_sys/project/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/filedistance.dir/computedistance.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/filedistance.dir/computedistance.c.o   -c /home/user/Desktop/op_sys/project/computedistance.c
+CMakeFiles/filedistance.dir/fdistance.c.o: CMakeFiles/filedistance.dir/flags.make
+CMakeFiles/filedistance.dir/fdistance.c.o: fdistance.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/Desktop/file_distance/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/filedistance.dir/fdistance.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/filedistance.dir/fdistance.c.o   -c /home/user/Desktop/file_distance/fdistance.c
 
-CMakeFiles/filedistance.dir/computedistance.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/filedistance.dir/computedistance.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/user/Desktop/op_sys/project/computedistance.c > CMakeFiles/filedistance.dir/computedistance.c.i
+CMakeFiles/filedistance.dir/fdistance.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/filedistance.dir/fdistance.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/user/Desktop/file_distance/fdistance.c > CMakeFiles/filedistance.dir/fdistance.c.i
 
-CMakeFiles/filedistance.dir/computedistance.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/filedistance.dir/computedistance.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/user/Desktop/op_sys/project/computedistance.c -o CMakeFiles/filedistance.dir/computedistance.c.s
+CMakeFiles/filedistance.dir/fdistance.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/filedistance.dir/fdistance.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/user/Desktop/file_distance/fdistance.c -o CMakeFiles/filedistance.dir/fdistance.c.s
 
-CMakeFiles/filedistance.dir/changefile.c.o: CMakeFiles/filedistance.dir/flags.make
-CMakeFiles/filedistance.dir/changefile.c.o: changefile.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/Desktop/op_sys/project/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/filedistance.dir/changefile.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/filedistance.dir/changefile.c.o   -c /home/user/Desktop/op_sys/project/changefile.c
+CMakeFiles/filedistance.dir/fapply.c.o: CMakeFiles/filedistance.dir/flags.make
+CMakeFiles/filedistance.dir/fapply.c.o: fapply.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/Desktop/file_distance/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/filedistance.dir/fapply.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/filedistance.dir/fapply.c.o   -c /home/user/Desktop/file_distance/fapply.c
 
-CMakeFiles/filedistance.dir/changefile.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/filedistance.dir/changefile.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/user/Desktop/op_sys/project/changefile.c > CMakeFiles/filedistance.dir/changefile.c.i
+CMakeFiles/filedistance.dir/fapply.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/filedistance.dir/fapply.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/user/Desktop/file_distance/fapply.c > CMakeFiles/filedistance.dir/fapply.c.i
 
-CMakeFiles/filedistance.dir/changefile.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/filedistance.dir/changefile.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/user/Desktop/op_sys/project/changefile.c -o CMakeFiles/filedistance.dir/changefile.c.s
+CMakeFiles/filedistance.dir/fapply.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/filedistance.dir/fapply.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/user/Desktop/file_distance/fapply.c -o CMakeFiles/filedistance.dir/fapply.c.s
 
-CMakeFiles/filedistance.dir/directoryscan.c.o: CMakeFiles/filedistance.dir/flags.make
-CMakeFiles/filedistance.dir/directoryscan.c.o: directoryscan.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/Desktop/op_sys/project/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/filedistance.dir/directoryscan.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/filedistance.dir/directoryscan.c.o   -c /home/user/Desktop/op_sys/project/directoryscan.c
+CMakeFiles/filedistance.dir/dirscan.c.o: CMakeFiles/filedistance.dir/flags.make
+CMakeFiles/filedistance.dir/dirscan.c.o: dirscan.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/Desktop/file_distance/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/filedistance.dir/dirscan.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/filedistance.dir/dirscan.c.o   -c /home/user/Desktop/file_distance/dirscan.c
 
-CMakeFiles/filedistance.dir/directoryscan.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/filedistance.dir/directoryscan.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/user/Desktop/op_sys/project/directoryscan.c > CMakeFiles/filedistance.dir/directoryscan.c.i
+CMakeFiles/filedistance.dir/dirscan.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/filedistance.dir/dirscan.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/user/Desktop/file_distance/dirscan.c > CMakeFiles/filedistance.dir/dirscan.c.i
 
-CMakeFiles/filedistance.dir/directoryscan.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/filedistance.dir/directoryscan.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/user/Desktop/op_sys/project/directoryscan.c -o CMakeFiles/filedistance.dir/directoryscan.c.s
+CMakeFiles/filedistance.dir/dirscan.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/filedistance.dir/dirscan.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/user/Desktop/file_distance/dirscan.c -o CMakeFiles/filedistance.dir/dirscan.c.s
 
-CMakeFiles/filedistance.dir/filereader.c.o: CMakeFiles/filedistance.dir/flags.make
-CMakeFiles/filedistance.dir/filereader.c.o: filereader.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/Desktop/op_sys/project/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/filedistance.dir/filereader.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/filedistance.dir/filereader.c.o   -c /home/user/Desktop/op_sys/project/filereader.c
+CMakeFiles/filedistance.dir/utils.c.o: CMakeFiles/filedistance.dir/flags.make
+CMakeFiles/filedistance.dir/utils.c.o: utils.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/Desktop/file_distance/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/filedistance.dir/utils.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/filedistance.dir/utils.c.o   -c /home/user/Desktop/file_distance/utils.c
 
-CMakeFiles/filedistance.dir/filereader.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/filedistance.dir/filereader.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/user/Desktop/op_sys/project/filereader.c > CMakeFiles/filedistance.dir/filereader.c.i
+CMakeFiles/filedistance.dir/utils.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/filedistance.dir/utils.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/user/Desktop/file_distance/utils.c > CMakeFiles/filedistance.dir/utils.c.i
 
-CMakeFiles/filedistance.dir/filereader.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/filedistance.dir/filereader.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/user/Desktop/op_sys/project/filereader.c -o CMakeFiles/filedistance.dir/filereader.c.s
+CMakeFiles/filedistance.dir/utils.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/filedistance.dir/utils.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/user/Desktop/file_distance/utils.c -o CMakeFiles/filedistance.dir/utils.c.s
 
 # Object files for target filedistance
 filedistance_OBJECTS = \
 "CMakeFiles/filedistance.dir/main.c.o" \
-"CMakeFiles/filedistance.dir/computedistance.c.o" \
-"CMakeFiles/filedistance.dir/changefile.c.o" \
-"CMakeFiles/filedistance.dir/directoryscan.c.o" \
-"CMakeFiles/filedistance.dir/filereader.c.o"
+"CMakeFiles/filedistance.dir/fdistance.c.o" \
+"CMakeFiles/filedistance.dir/fapply.c.o" \
+"CMakeFiles/filedistance.dir/dirscan.c.o" \
+"CMakeFiles/filedistance.dir/utils.c.o"
 
 # External object files for target filedistance
 filedistance_EXTERNAL_OBJECTS =
 
 filedistance: CMakeFiles/filedistance.dir/main.c.o
-filedistance: CMakeFiles/filedistance.dir/computedistance.c.o
-filedistance: CMakeFiles/filedistance.dir/changefile.c.o
-filedistance: CMakeFiles/filedistance.dir/directoryscan.c.o
-filedistance: CMakeFiles/filedistance.dir/filereader.c.o
+filedistance: CMakeFiles/filedistance.dir/fdistance.c.o
+filedistance: CMakeFiles/filedistance.dir/fapply.c.o
+filedistance: CMakeFiles/filedistance.dir/dirscan.c.o
+filedistance: CMakeFiles/filedistance.dir/utils.c.o
 filedistance: CMakeFiles/filedistance.dir/build.make
 filedistance: CMakeFiles/filedistance.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/user/Desktop/op_sys/project/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking C executable filedistance"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/user/Desktop/file_distance/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking C executable filedistance"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/filedistance.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -153,6 +153,6 @@ CMakeFiles/filedistance.dir/clean:
 .PHONY : CMakeFiles/filedistance.dir/clean
 
 CMakeFiles/filedistance.dir/depend:
-	cd /home/user/Desktop/op_sys/project && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/user/Desktop/op_sys/project /home/user/Desktop/op_sys/project /home/user/Desktop/op_sys/project /home/user/Desktop/op_sys/project /home/user/Desktop/op_sys/project/CMakeFiles/filedistance.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/user/Desktop/file_distance && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/user/Desktop/file_distance /home/user/Desktop/file_distance /home/user/Desktop/file_distance /home/user/Desktop/file_distance /home/user/Desktop/file_distance/CMakeFiles/filedistance.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/filedistance.dir/depend
 

@@ -3,4 +3,4 @@ project(filedistance C)
 
 set(CMAKE_C_STANDARD 11)
 
-add_executable(filedistance main.c computedistance.c changefile.c directoryscan.c filereader.c)
+add_executable(filedistance main.c fdistance.c fapply.c dirscan.c utils.c)

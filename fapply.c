@@ -2,8 +2,8 @@
 #include <string.h>
 #include <stdlib.h>
 
-#include "filereader.h"
-#include "changefile.h"
+#include "utils.h"
+#include "fapply.h"
 
 static int predict_file_size(int,int,Data*);
 

@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-#include "filereader.h"
+#include "utils.h"
 
 /**
  * Reads a file by path and returns the relative allocated buffer

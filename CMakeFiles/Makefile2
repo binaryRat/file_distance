@@ -44,10 +44,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/user/Desktop/op_sys/project
+CMAKE_SOURCE_DIR = /home/user/Desktop/file_distance
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/user/Desktop/op_sys/project
+CMAKE_BINARY_DIR = /home/user/Desktop/file_distance
 
 #=============================================================================
 # Directory level rules for the build root directory
@@ -74,14 +74,14 @@ clean: CMakeFiles/filedistance.dir/clean
 CMakeFiles/filedistance.dir/all:
 	$(MAKE) -f CMakeFiles/filedistance.dir/build.make CMakeFiles/filedistance.dir/depend
 	$(MAKE) -f CMakeFiles/filedistance.dir/build.make CMakeFiles/filedistance.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/user/Desktop/op_sys/project/CMakeFiles --progress-num=1,2,3,4,5,6 "Built target filedistance"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/user/Desktop/file_distance/CMakeFiles --progress-num=1,2,3,4,5,6 "Built target filedistance"
 .PHONY : CMakeFiles/filedistance.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/filedistance.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/Desktop/op_sys/project/CMakeFiles 6
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/Desktop/file_distance/CMakeFiles 6
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/filedistance.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/Desktop/op_sys/project/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/Desktop/file_distance/CMakeFiles 0
 .PHONY : CMakeFiles/filedistance.dir/rule
 
 # Convenience name for target.

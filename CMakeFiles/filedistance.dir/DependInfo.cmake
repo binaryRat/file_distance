@@ -4,11 +4,11 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/home/user/Desktop/op_sys/project/changefile.c" "/home/user/Desktop/op_sys/project/CMakeFiles/filedistance.dir/changefile.c.o"
-  "/home/user/Desktop/op_sys/project/computedistance.c" "/home/user/Desktop/op_sys/project/CMakeFiles/filedistance.dir/computedistance.c.o"
-  "/home/user/Desktop/op_sys/project/directoryscan.c" "/home/user/Desktop/op_sys/project/CMakeFiles/filedistance.dir/directoryscan.c.o"
-  "/home/user/Desktop/op_sys/project/filereader.c" "/home/user/Desktop/op_sys/project/CMakeFiles/filedistance.dir/filereader.c.o"
-  "/home/user/Desktop/op_sys/project/main.c" "/home/user/Desktop/op_sys/project/CMakeFiles/filedistance.dir/main.c.o"
+  "/home/user/Desktop/file_distance/dirscan.c" "/home/user/Desktop/file_distance/CMakeFiles/filedistance.dir/dirscan.c.o"
+  "/home/user/Desktop/file_distance/fapply.c" "/home/user/Desktop/file_distance/CMakeFiles/filedistance.dir/fapply.c.o"
+  "/home/user/Desktop/file_distance/fdistance.c" "/home/user/Desktop/file_distance/CMakeFiles/filedistance.dir/fdistance.c.o"
+  "/home/user/Desktop/file_distance/main.c" "/home/user/Desktop/file_distance/CMakeFiles/filedistance.dir/main.c.o"
+  "/home/user/Desktop/file_distance/utils.c" "/home/user/Desktop/file_distance/CMakeFiles/filedistance.dir/utils.c.o"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 

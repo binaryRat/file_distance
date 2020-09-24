@@ -1,1 +1,1 @@
-/usr/bin/cc    CMakeFiles/filedistance.dir/main.c.o CMakeFiles/filedistance.dir/computedistance.c.o CMakeFiles/filedistance.dir/changefile.c.o CMakeFiles/filedistance.dir/directoryscan.c.o CMakeFiles/filedistance.dir/filereader.c.o  -o filedistance 
+/usr/bin/cc    CMakeFiles/filedistance.dir/main.c.o CMakeFiles/filedistance.dir/fdistance.c.o CMakeFiles/filedistance.dir/fapply.c.o CMakeFiles/filedistance.dir/dirscan.c.o CMakeFiles/filedistance.dir/utils.c.o  -o filedistance 
