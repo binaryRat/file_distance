@@ -141,7 +141,7 @@ int change_file(char *origin_file, char *file_mod,char *output_file) {
 
 					int wrote = write_file(output_file,result_buffer,(fsize * sizeof(char)));
 					
-    				if(wrote != -1) outcome = 1;
+    				if(wrote != -1) outcome = 0;
 
 					free(result_buffer);
 			}

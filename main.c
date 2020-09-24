@@ -38,6 +38,7 @@ int main(int argc,char* argv[]){
 		clock_t begin = clock();
 
 		int distance = -1;
+		
 		if(argc == 4) distance = get_distance(argv[2],argv[3]);
 		if(argc == 5) distance = compute_distance(argv[2],argv[3],output);
 

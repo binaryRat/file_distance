@@ -6,25 +6,19 @@
 
 #IncludeRegexTransform: 
 
-/home/user/Desktop/file_distance/dirscan.h
-
-/home/user/Desktop/file_distance/fapply.h
-
-/home/user/Desktop/file_distance/fdistance.h
-
-/home/user/Desktop/file_distance/main.c
+/home/user/Desktop/file_distance/fdistance.c
 stdio.h
--
-stdlib.h
 -
 string.h
 -
-time.h
+stdlib.h
 -
+utils.h
+/home/user/Desktop/file_distance/utils.h
 fdistance.h
 /home/user/Desktop/file_distance/fdistance.h
-fapply.h
-/home/user/Desktop/file_distance/fapply.h
-dirscan.h
-/home/user/Desktop/file_distance/dirscan.h
+
+/home/user/Desktop/file_distance/fdistance.h
+
+/home/user/Desktop/file_distance/utils.h
 
