@@ -7,5 +7,7 @@
 	    char value;
 	} Data;
 #endif
+
 int compute_distance(char*,char*,char*);
+
 int get_distance(char*,char*);

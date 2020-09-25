@@ -153,6 +153,7 @@ int change_file(char *origin_file, char *file_mod,char *output_file) {
 		}
 
 		free(file_1->buffer);
+		
 		free(file_1);
 
 	}

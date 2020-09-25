@@ -19,6 +19,9 @@ static Data* reverse_matrix(int**,BUF*,BUF*,int,int);
 
 static int find_direction(int** ,int ,int );
 
+static void free_buffers(BUF*, BUF*,Data*);
+
+static int** get_matrix(BUF*,BUF*);
 /**
  * Create a matrix and returns a pointer
  * @param m heigth of the matrix
@@ -263,6 +266,28 @@ static void free_matrix(int** matrix,int length){
 }
 
 /**
+ * Releases the memory 
+ * @param file_1 First buffer
+ * @param file_2 Second buffer
+ * @param instructions Instruction buffer
+ * @return 
+ */
+
+static void free_buffers(BUF* file_1, BUF* file_2,Data* instructions){
+    
+    if(instructions != NULL) free(instructions);
+    
+    free(file_1->buffer);
+
+    free(file_1);
+
+    free(file_2->buffer);
+
+    free(file_2);
+
+}
+
+/**
  * Finds the file distance and writes the instruction
  * @param first First file
  * @param second Second file
@@ -293,13 +318,10 @@ int compute_distance(char *first, char *second,char *outfile) {
     int wrote = write_file(outfile,(char*)instructions,(distance * sizeof(Data)));
     if(wrote == -1) return -1;    
 
-    free(instructions);
 
     free_matrix(matrix,m);
 
-    free(file_1);
-
-    free(file_2);
+    free_buffers(file_1, file_2, instructions);
 
     return distance;
 }
@@ -329,9 +351,7 @@ int get_distance(char *first, char *second){
 
     free_matrix(matrix,m);
 
-    free(file_1);
-
-    free(file_2);
+    free_buffers(file_1, file_2,NULL);
 
     return distance;
 }

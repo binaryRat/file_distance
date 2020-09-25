@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <string.h>
 
 #include "utils.h"
 
@@ -18,7 +17,7 @@ BUF* read_file(char* path){
 
 	if (fp != NULL) {
 
-    	if (fseek(fp, 0L, SEEK_END) == 0) {
+    	if (fseek(fp, 0, SEEK_END) == 0) {
 
         	long bufsize = ftell(fp);
 
@@ -26,7 +25,7 @@ BUF* read_file(char* path){
 
         		buf = malloc(sizeof(char) * (bufsize + 1));
 
-        		if (fseek(fp, 0L, SEEK_SET) == 0) { 
+        		if (fseek(fp, 0, SEEK_SET) == 0) { 
 
         			int count = fread(buf, sizeof(char), bufsize, fp);
 
@@ -79,7 +78,9 @@ int write_file(char* path,char* buffer,int length){
         		if ( count ) {
 
 					printf("The file '%s' was written\n", path);
-					
+
+					fflush(fp);
+
 					fclose(fp);
 
 					return 0;
@@ -108,7 +109,7 @@ long get_file_size(char* path){
 
 	if (fp != NULL) {
 
-    	if (fseek(fp, 0L, SEEK_END) == 0) {
+    	if (fseek(fp, 0, SEEK_END) == 0) {
 			
 			int size = ftell(fp);
         	

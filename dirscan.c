@@ -13,7 +13,7 @@ static int scan_all_directory(char*,char*,int);
 
 static int validate_path(char*);
 
-static void setGlobalVariables(int,char*);
+static void set_global_variables(int,char*);
 
 static void print_result(int,int, char*);
 
@@ -40,7 +40,7 @@ static int validate_path(char* name){
  * @return 
  */
 
-static void setGlobalVariables(int distance,char* path){
+static void set_global_variables(int distance,char* path){
 
     minimum_distance = distance;
 
@@ -62,7 +62,7 @@ static void print_result(int distance,int limit, char* path){
 
 	if(distance <= limit && limit != -1) printf("Distance : %d Path : '%s'\n",distance,path);
 
-    if((distance < minimum_distance || minimum_distance == -1) && limit == -1) setGlobalVariables(distance,path);
+    if((distance < minimum_distance || minimum_distance == -1) && limit == -1) set_global_variables(distance,path);
 
 	return;
 
