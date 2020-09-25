@@ -9,13 +9,13 @@ static int minimum(int,int,int);
 
 static int** create_matrix(int,int);
 
-static int** fill_matrix(int**,char*,char*);
+static int** fill_matrix(int**,BUF*,BUF*);
 
 static void free_matrix(int**,int);
 
 static void add_intruction(Data*,char*,int,char);
 
-static Data* reverse_matrix(int**,char*,char*,int,int);
+static Data* reverse_matrix(int**,BUF*,BUF*,int,int);
 
 static int find_direction(int** ,int ,int );
 
@@ -52,11 +52,11 @@ static int** create_matrix(int m,int n){
  * @return filled matrix
  */
 
-static int** fill_matrix(int** matrix,char* buffer_1,char* buffer_2){
+static int** fill_matrix(int** matrix,BUF* buffer_1,BUF* buffer_2){
 
-    int m = strlen(buffer_1);
+    int m = buffer_1->length;
 
-    int n = strlen(buffer_2);
+    int n = buffer_2->length;
 
     for(int i = 0; i <= m; i++) matrix[i][0] = i;
 
@@ -66,7 +66,7 @@ static int** fill_matrix(int** matrix,char* buffer_1,char* buffer_2){
 
         for(int j = 1; j <= n; j++) {
 
-            if(buffer_1[i - 1] != buffer_2[j - 1]) {
+            if(buffer_1->buffer[i - 1] != buffer_2->buffer[j - 1]) {
 
                 int k = minimum( matrix[i][j - 1], matrix[i - 1][j], matrix[i - 1][j - 1]);
 
@@ -93,11 +93,11 @@ static int** fill_matrix(int** matrix,char* buffer_1,char* buffer_2){
  * @return completed matrix
  */
 
-static int** get_matrix(char* file_1,char* file_2){
+static int** get_matrix(BUF* file_1,BUF* file_2){
 
-    int m = strlen(file_1);
+    int m = file_1->length;
 
-    int n = strlen(file_2);
+    int n = file_2->length;
 
     int **matrix = create_matrix(m,n);
 
@@ -176,7 +176,7 @@ static int find_direction(int** matrix,int m,int n){
  * @return Instructions buffer
  */
 
-static Data* reverse_matrix(int** matrix,char* buffer_1,char* buffer_2,int m, int n){
+static Data* reverse_matrix(int** matrix,BUF* buffer_1,BUF* buffer_2,int m, int n){
 
         int distance = matrix[m][n];
 
@@ -188,13 +188,13 @@ static Data* reverse_matrix(int** matrix,char* buffer_1,char* buffer_2,int m, in
 
         while(m > 0 || n > 0){
 
-            if(buffer_1[m-1] != buffer_2[n-1]) {
+            if(buffer_1->buffer[m-1] != buffer_2->buffer[n-1]) {
                 
                 int direction = find_direction(matrix,m,n);
                 		
                 if(direction == 1){
 
-                    add_intruction(&instruction[point],"ADD",m,buffer_2[n-1]);
+                    add_intruction(&instruction[point],"ADD",m,buffer_2->buffer[n-1]);
 
                     m++;
 
@@ -208,7 +208,7 @@ static Data* reverse_matrix(int** matrix,char* buffer_1,char* buffer_2,int m, in
 
                 }
 
-                if(direction == 3) add_intruction(&instruction[point],"SET",m-1,buffer_2[n-1]);
+                if(direction == 3) add_intruction(&instruction[point],"SET",m-1,buffer_2->buffer[n-1]);
 
                 point--;
 
@@ -272,15 +272,15 @@ static void free_matrix(int** matrix,int length){
 
 int compute_distance(char *first, char *second,char *outfile) {
 
-    char *file_1 = read_file(first);
+    BUF *file_1 = read_file(first);
     if(file_1 == NULL) return -1;
 
-    char *file_2 = read_file(second);
+    BUF *file_2 = read_file(second);
     if(file_2 == NULL) return -1;
 
-    int m = strlen(file_1);
+    int m = file_1->length;
 
-    int n = strlen(file_2);
+    int n = file_2->length;
 
     int** matrix = get_matrix(file_1,file_2);
 
@@ -313,15 +313,15 @@ int compute_distance(char *first, char *second,char *outfile) {
 
 int get_distance(char *first, char *second){
     
-    char *file_1 = read_file(first);
+    BUF *file_1 = read_file(first);
     if(file_1 == NULL) return -1;
 
-    char *file_2 = read_file(second);
+    BUF *file_2 = read_file(second);
     if(file_2 == NULL) return -1;
 
-    int m = strlen(file_1);
+    int m = file_1->length;
 
-    int n = strlen(file_2);
+    int n = file_2->length;
 
     int** matrix = get_matrix(file_1,file_2);
 

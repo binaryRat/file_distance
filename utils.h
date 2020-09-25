@@ -7,8 +7,16 @@
 	    char value;
 	} Data;
 #endif
+#ifndef FILE_STRUCT
+	#define FILE_STRUCT
+	typedef struct BUF
+	{
+	    char* buffer;
+	    int length;
+	} BUF;
+#endif
 
-char* read_file(char*);
+BUF* read_file(char*);
 
 int write_file(char*,char*,int);
 

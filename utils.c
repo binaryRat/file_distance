@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 
 #include "utils.h"
 
@@ -9,7 +10,7 @@
  * @return the buffer
  */
 
-char* read_file(char* path){
+BUF* read_file(char* path){
 
 	char *buf = NULL;
 
@@ -28,12 +29,18 @@ char* read_file(char* path){
         		if (fseek(fp, 0L, SEEK_SET) == 0) { 
 
         			int count = fread(buf, sizeof(char), bufsize, fp);
-					
-        			if ( count ) {
+
+        			if ( count == bufsize ) {
+
+						BUF *buffer = malloc(sizeof(BUF));
+
+						buffer->buffer = buf;
+
+						buffer->length = count;
 
 						fclose(fp);
 
-						return buf;
+						return buffer;
 
         			}
 
